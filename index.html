@@ -1,37 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css" />
-  <link rel="gamigames icon" href="./images/logo.png" />
-  <title>Qual é a logo?</title>
-</head>
-
-<body>
-  <div class="card">
-    <div class="content">
-      <center>
-        <h1>Qual é a logo?</h1>
-      </center>
-
-      <center><a href="./quizes/nvl1.html"><button>
-            <span class="button_top"> Iniciar
-            </span>
-          </button></center></a>
-      <center><button>
-          <span class="button_top"> Instruções
-          </span>
-        </button></center>
-      <center><button>
-          <span class="button_top"> Criadores
-          </span>
-        </button></center>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="quiz icon" href="./images/logo.png" />
+    <title>Qual é a logo?</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="content">
+        <div class="loader">
+          <span>Qual é a logo?</span>
+          <span>Qual é a logo?</span>
+        </div>
+        <a href="./quizes/nvl1.html">
+          <button class="cssbuttons-io-button">
+            Iniciar
+            <div class="icon">
+              <svg
+                height="24"
+                width="24"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M16.172 11l-5.364-5.364
+                  1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div></button
+        ></a>
+        <button class="c-button c-button--gooey">
+          <a href="./inst.html">
+            Instruções
+            <div class="c-button__blobs">
+              <div></div>
+              <div></div>
+              <div></div></div
+          ></a>
+        </button>
+        <svg
+          style="display: block; height: 0; width: 0"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                result="blur"
+                stdDeviation="10"
+                in="SourceGraphic"
+              ></feGaussianBlur>
+              <feColorMatrix
+                result="goo"
+                values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0
+                0 0 0 18 -7"
+                mode="matrix"
+                in="blur"
+              ></feColorMatrix>
+              <feBlend in2="goo" in="SourceGraphic"></feBlend>
+            </filter>
+          </defs>
+        </svg>
+        <button class="c-button c-button--gooey">
+          <a href="./devs.html">
+            Desenvolvedores
+            <div class="c-button__blobs">
+              <div></div>
+              <div></div>
+              <div></div></div
+          ></a>
+        </button>
+        <svg
+          style="display: block; height: 0; width: 0"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur
+                result="blur"
+                stdDeviation="10"
+                in="SourceGraphic"
+              ></feGaussianBlur>
+              <feColorMatrix
+                result="goo"
+                values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0
+                0 0 0 18 -7"
+                mode="matrix"
+                in="blur"
+              ></feColorMatrix>
+              <feBlend in2="goo" in="SourceGraphic"></feBlend>
+            </filter>
+          </defs>
+        </svg>
+      </div>
     </div>
-  </div>
-
-</body>
-
+  </body>
 </html>

@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("./images/background.jpg");
+  background-image: url("./images/background2.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -13,26 +13,155 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+/* From uiverse.io by @adamgiebl */
+.cssbuttons-io-button {
+  background: #00ffbf;
+  color: white;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 20px;
+  font-weight: 500;
+  width: 23rem;
+  border-radius: 10em;
+  border: 5px solid #ffffff;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #ffffff;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  justify-content: center;
+  filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+}
 
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  margin-right: -0.2em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 5em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #ffffff;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(110% - -2em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 3em;
+  transition: transform 0.3s;
+  color: #00ffb3;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(2em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.contentdevs {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+/* From uiverse.io by @mrhyddenn */
+.loader {
+  position: relative;
+  left: 13rem;
+  top: -5rem;
+  margin-top: 100px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+.loader span {
+  margin-left: 0.8rem;
+  position: absolute;
+  color: rgb(0, 255, 145);
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.loader span:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 0.4px rgb(249, 249, 249);
+  text-shadow: 0 0 12px #fff;
+}
+
+.loader span:nth-child(2) {
+  color: rgb(0, 255, 208);
+  -webkit-text-stroke: 1px rgb(9, 255, 214);
+  animation: uiverse723 3s ease-in-out infinite;
+}
+
+@keyframes uiverse723 {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      15% 44%,
+      32% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      16% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
 /* From uiverse.io by @adamgiebl */
 .card {
   width: 35rem;
   position: flex;
   height: 35rem;
   border-radius: 30px;
-  background: #666666e8;
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  background: #3a3a3ad0;
+  box-shadow: 15px 15px 30px #ffffff, -15px -15px 30px #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(8px);
 }
 
 .card h1 {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 50px;
   font-size: 50px;
-  filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
   color: #ffffff;
   text-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000,
     2px 1px 1px #000;
@@ -50,7 +179,8 @@ button {
   cursor: pointer;
   border-radius: var(--button_radius);
   background: var(--button_outline_color);
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .button_top {
@@ -63,7 +193,7 @@ button {
   color: var(--button_outline_color);
   transform: translateY(-0.2em);
   transition: transform 0.1s ease;
-  width: 21rem;
+  width: 23rem;
   height: 4rem;
 }
 
@@ -88,30 +218,53 @@ button {
 img {
   height: 12rem;
   filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
-  margin-bottom: 2rem;
 }
 
 .cardnvls {
-  width: 60rem;
+  width: 65rem;
   position: flex;
   height: 35rem;
   border-radius: 30px;
-  background: #666666e8;
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  background: #3a3a3ad0;
+  box-shadow: 15px 15px 30px #ffffff, -15px -15px 30px #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(8px);
 }
 
 .cardnvls h1 {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
   font-size: 50px;
-  filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
   color: #ffffff;
   text-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000,
     2px 1px 1px #000;
+}
+
+.carddevs {
+  width: 65rem;
+  position: flex;
+  height: 35rem;
+  border-radius: 30px;
+  background: #3a3a3ad0;
+  box-shadow: 15px 15px 30px #ffffff, -15px -15px 30px #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+}
+
+.carddevs h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  background-image: linear-gradient(to bottom, #04989e, #75d45e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 1rem #75d45e);
 }
 
 .buttons1 {
@@ -130,4 +283,224 @@ img {
 
 a {
   text-decoration: none;
+}
+
+#gameover {
+  border-radius: 10px;
+}
+
+/* From uiverse.io by @abrahamcalsin */
+.card-client {
+  background-image: linear-gradient(to bottom, #04989e, #64c54c);
+  width: 10rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 20px;
+  border: 4px solid #7cdacc;
+  box-shadow: 0 6px 10px rgb(0, 192, 147);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 10rem;
+  height: 10rem;
+  border: 4px solid #7cdacc;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background: #7cdacc;
+}
+
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+
+.social-media a img {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
+
+p {
+  color: white;
+}
+
+#gamewin {
+  border-radius: 10px;
+  width: 25rem;
+  height: 15rem;
+  top: -1rem;
+  position: relative;
+}
+
+#p {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-shadow: -2px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000,
+    2px 1px 1px #000;
+}
+/* From uiverse.io */
+.c-button {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 18px;
+  width: 23rem;
+  text-decoration: none;
+  padding: 0.9em 1.6em;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+  border-radius: 40px;
+  background: transparent;
+  filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+}
+
+.c-button--gooey {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 4px solid #ffffff;
+  border-radius: 40px;
+  position: relative;
+  align-items: center;
+  transition: all 700ms ease;
+  border-radius: 50px;
+}
+
+.c-button--gooey .c-button__blobs {
+  height: 100%;
+  filter: url(#goo);
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -3px;
+  right: -1px;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.c-button--gooey .c-button__blobs div {
+  background-color: rgb(0, 255, 208);
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  transform: scale(1.4) translateY(125%) translateZ(0);
+  transition: all 1000ms ease;
+  border-radius: 100%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(1) {
+  left: -5%;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(2) {
+  left: 30%;
+  transition-delay: 60ms;
+}
+
+.c-button--gooey .c-button__blobs div:nth-child(3) {
+  left: 66%;
+  transition-delay: 25ms;
+}
+
+.c-button--gooey:hover {
+  color: #fff;
+}
+
+.c-button--gooey:hover .c-button__blobs div {
+  transform: scale(1.4) translateY(0) translateZ(0);
 }
